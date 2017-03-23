@@ -1,0 +1,10 @@
+# Shotgun Pipeline Toolkit configuration file
+# This file was automatically created by setup_project
+# This file reflects the paths in the primary pipeline
+# configuration defined for this project.
+
+Windows: 'Z:\InProd\testshow2\testshow2_SG'
+Darwin: '/Volumes/HBlade/testshow2/testshow2_SG'
+Linux: '/halonblade/HBlade/testshow2/testshow2_SG'
+
+# End of file.
