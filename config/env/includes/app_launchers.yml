@@ -43,7 +43,7 @@ launch_3dsmax:
   mac_args: ''
   mac_path: ''
   menu_name: Launch 3dsmax # note: desktop app means we cannot have spaces in app name
-  versions: []
+  versions: ['2016','2017','2015']
   windows_args: ''
   windows_path: '@3dsmax_windows'
 #
@@ -66,7 +66,7 @@ launch_hiero:
   mac_args: ''
   mac_path: '@hiero_mac'
   menu_name: Launch Hiero
-  versions: []
+  versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: --hiero
   windows_path: '@hiero_win'
 #
@@ -89,7 +89,7 @@ launch_houdini:
   mac_args: ''
   mac_path: '@houdini_mac'
   menu_name: Launch Houdini
-  versions: []
+  versions: ['15.0.244.16']
   windows_args: ''
   windows_path: '@houdini_windows'
 #
@@ -112,7 +112,7 @@ launch_mari:
   mac_args: ''
   mac_path: '@mari_mac'
   menu_name: Launch Mari
-  versions: []
+  versions: ['3.0v2']
   windows_args: ''
   windows_path: '@mari_windows'
 #
@@ -134,8 +134,8 @@ launch_maya:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@maya_mac'
-  menu_name: Launch Maya
-  versions: []
+  menu_name: Launch Maya {version}
+  versions: ['2016','2017','2015']
   windows_args: ''
   windows_path: '@maya_windows'
 #
@@ -157,8 +157,8 @@ launch_motionbuilder:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: ''
-  menu_name: Launch MotionBuilder
-  versions: []
+  menu_name: Launch MotionBuilder {version}
+  versions: ['2016','2015','2014']
   windows_args: ''
   windows_path: '@motionbuilder_windows'
 #
@@ -181,8 +181,31 @@ launch_nuke:
   mac_args: ''
   mac_path: '@nuke_mac'
   menu_name: Launch Nuke
-  versions: []
+  versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: ''
+  windows_path: '@nuke_windows'
+#
+# -------------------------------------------------
+# NukeX
+# -------------------------------------------------
+launch_nukex:
+  defer_keyword: ''
+  engine: tk-nuke
+  extra: {}
+  hook_app_launch: default
+  hook_before_app_launch: default
+  icon: '{target_engine}/NukeXApp.png'
+  linux_args: ''
+  linux_path: '@nuke_linux'
+  location:
+    version: v0.8.2
+    type: app_store
+    name: tk-multi-launchapp
+  mac_args: ''
+  mac_path: '@nuke_mac'
+  menu_name: NukeX {version}
+  versions: [(9.0)v(8), (10.0)v(3)]
+  windows_args: --nukex
   windows_path: '@nuke_windows'
 #
 # -------------------------------------------------
@@ -204,7 +227,7 @@ launch_nukestudio:
   mac_args: ''
   mac_path: '@nukestudio_mac'
   menu_name: Launch NukeStudio
-  versions: []
+  versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: --studio
   windows_path: '@nukestudio_windows'
 #
@@ -227,7 +250,7 @@ launch_photoshopcc:
   mac_args: ''
   mac_path: '@photoshop_mac'
   menu_name: Launch Photoshop
-  versions: []
+  versions: ['2017','2016','2015','CS6']
   windows_args: ''
   windows_path: '@photoshop_win'
 #
