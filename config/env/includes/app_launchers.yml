@@ -42,7 +42,7 @@ launch_3dsmax:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: ''
-  menu_name: Launch 3dsmax # note: desktop app means we cannot have spaces in app name
+  menu_name: Launch 3dsmax {version} # note: desktop app means we cannot have spaces in app name
   versions: ['2016','2017','2015']
   windows_args: ''
   windows_path: '@3dsmax_windows'
@@ -65,7 +65,7 @@ launch_hiero:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@hiero_mac'
-  menu_name: Launch Hiero
+  menu_name: Launch Hiero {version}
   versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: --hiero
   windows_path: '@hiero_win'
@@ -88,7 +88,7 @@ launch_houdini:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@houdini_mac'
-  menu_name: Launch Houdini
+  menu_name: Launch Houdini {version}
   versions: ['15.0.244.16']
   windows_args: ''
   windows_path: '@houdini_windows'
@@ -111,7 +111,7 @@ launch_mari:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@mari_mac'
-  menu_name: Launch Mari
+  menu_name: Launch Mari {version}
   versions: ['3.0v2']
   windows_args: ''
   windows_path: '@mari_windows'
@@ -135,7 +135,7 @@ launch_maya:
   mac_args: ''
   mac_path: '@maya_mac'
   menu_name: Launch Maya {version}
-  versions: ['2016','2017','2015']
+  versions: ['2016','2015']
   windows_args: ''
   windows_path: '@maya_windows'
 #
@@ -180,7 +180,7 @@ launch_nuke:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@nuke_mac'
-  menu_name: Launch Nuke
+  menu_name: Launch Nuke {version}
   versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: ''
   windows_path: '@nuke_windows'
@@ -226,7 +226,7 @@ launch_nukestudio:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@nukestudio_mac'
-  menu_name: Launch NukeStudio
+  menu_name: Launch NukeStudio {version}
   versions: [(9.0)v(8), (10.0)v(3)]
   windows_args: --studio
   windows_path: '@nukestudio_windows'
@@ -249,7 +249,7 @@ launch_photoshopcc:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: '@photoshop_mac'
-  menu_name: Launch Photoshop
+  menu_name: Launch Photoshop {version}
   versions: ['2017','2016','2015','CS6']
   windows_args: ''
   windows_path: '@photoshop_win'
@@ -287,7 +287,7 @@ launch_softimage:
     name: tk-multi-launchapp
   mac_args: ''
   mac_path: ''
-  menu_name: Launch Softimage
-  versions: []
+  menu_name: Launch Softimage {version}
+  versions: ['2013']
   windows_args: ''
   windows_path: '@softimage_windows'
