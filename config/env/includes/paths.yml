@@ -88,6 +88,18 @@ hiero_linux: Nuke9.0
 softimage_windows: C:\Program Files\Autodesk\Softimage {version}\Application\bin\XSI.bat
 softimage_linux: XSI
 
+#
+# Syntheyes
+#
+syntheyes_mac: /Applications/SynthEyes/SynthEyes.app
+syntheyes_windows: 'Z:\halon\sys\windows\share\apps\syntheyes\1702.1039\SynthEyes64.exe'
+#syntheyes_windows: 'C:\Program Files\Andersson Technologies LLC\SynthEyes\SynthEyes64.exe'
+syntheyes_linux: SynthEyes
+syntheyes_extras:         
+    mac_python_path: /usr/bin/python
+    linux_python_path: python
+    windows_python_path: 'Z:\halon\sys\windows\share\apps\python\2.7\pythonw.exe'
+    extreme: ''
 
 #
 # Tweak RV

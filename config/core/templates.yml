@@ -35,6 +35,8 @@ keys:
         type: str
     sg_asset_type:
         type: str
+    sg_sequence_type:
+        type: str
     Asset:
         type: str
     name:
@@ -119,6 +121,12 @@ keys:
         default: ma
         alias: extension
 
+    #These keys are custom for Halon
+    current_user_name:
+        type: str
+        shotgun_entity_type: HumanUser
+        shotgun_field_name: login
+
 #
 # The paths section contains all the the key locations where files are to be stored
 # by Sgtk Apps. Each path is made up of several keys (like {version} or {shot}) and
@@ -143,9 +151,9 @@ paths:
     #
     # These don't require the standard formatting (with definition and root_name) because they
     # will be set within each template that uses the alias.
-    shot_root: sequences/{Sequence}/{Shot}/{Step}
-    asset_root: assets/{sg_asset_type}/{Asset}/{Step}
-    sequence_root: sequences/{Sequence}
+    shot_root: '{sg_sequence_type}/{Sequence}/{Shot}'
+    asset_root: 'assets/{sg_asset_type}/{Asset}'
+    sequence_root: '{sg_sequence_type}/{Sequence}'
 
 
     ##########################################################################################
@@ -216,25 +224,24 @@ paths:
 
     # define the location of a work area
     shot_work_area_maya:
-        definition: '@shot_root/work/maya'
+        definition: '@shot_root/scenes'
         root_name: 'primary'
     # define the location of a publish area
     shot_publish_area_maya:
-        definition: '@shot_root/publish/maya'
+        definition: '@shot_root/scenes/publish'
         root_name: 'primary'
     # The location of WIP files
     maya_shot_work:
-        definition: '@shot_root/work/maya/{name}.v{version}.{maya_extension}'
+        definition: '@shot_root/scenes/{Shot}_{name}.v{version}.ma'
         root_name: 'primary'
     # The location of backups of WIP files
     maya_shot_snapshot:
-        definition: '@shot_root/work/maya/snapshots/{name}.v{version}.{timestamp}.{maya_extension}'
+        definition: '@shot_root/scenes/snapshots/Shot}_{name}.v{version}.{timestamp}.ma'
         root_name: 'primary'
     # The location of published maya files
     maya_shot_publish:
-        definition: '@shot_root/publish/maya/{name}.v{version}.{maya_extension}'
+        definition: '@shot_root/scenes/publish/Shot}_{name}.v{version}.ma'
         root_name: 'primary'
-
 
     #
     # Houdini

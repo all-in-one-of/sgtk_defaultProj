@@ -1,0 +1,20 @@
+launch_maya_2016$Launch Maya 2016$$False$$Launches and initializes an application environment.
+launch_nuke_9.0v8$Launch Nuke 9.0v8$$False$$Launches and initializes an application environment.
+launch_houdini_15.0.244.16$Launch Houdini 15.0.244.16$$False$$Launches and initializes an application environment.
+Jump to Screening Room in RV$Jump to Screening Room in RV$$False$Z:\InProd\testshow2\testshow2_SG\install\app_store\tk-multi-screeningroom\v0.3.2\icon_256.png$Screening Room integration right inside your application.
+launch_nuke_10.0v3$Launch Nuke 10.0v3$$False$$Launches and initializes an application environment.
+show_in_filesystem$Show in File System$$True$Z:\InProd\testshow2\testshow2_SG\install\core\python\tank\descriptor\resources\default_bundle_256px.png$Jump from a Shotgun page to the file system.
+Jump to Screening Room Web Player$Jump to Screening Room Web Player$$False$Z:\InProd\testshow2\testshow2_SG\install\app_store\tk-multi-screeningroom\v0.3.2\icon_256.png$Screening Room integration right inside your application.
+launch_3dsmax_2016$Launch 3dsmax 2016$$False$$Launches and initializes an application environment.
+launch_3dsmax_2017$Launch 3dsmax 2017$$False$$Launches and initializes an application environment.
+launch_photoshop_2016$Launch Photoshop 2016$$False$$Launches and initializes an application environment.
+launch_mari_3.0v2$Launch Mari 3.0v2$$False$$Launches and initializes an application environment.
+launch_photoshop_cs6$Launch Photoshop CS6$$False$$Launches and initializes an application environment.
+launch_maya_2015$Launch Maya 2015$$False$$Launches and initializes an application environment.
+launch_motionbuilder_2016$Launch MotionBuilder 2016$$False$$Launches and initializes an application environment.
+launch_motionbuilder_2014$Launch MotionBuilder 2014$$False$$Launches and initializes an application environment.
+launch_motionbuilder_2015$Launch MotionBuilder 2015$$False$$Launches and initializes an application environment.
+launch_3dsmax_2015$Launch 3dsmax 2015$$False$$Launches and initializes an application environment.
+launch_photoshop_2017$Launch Photoshop 2017$$False$$Launches and initializes an application environment.
+launch_softimage_2013$Launch Softimage 2013$$False$$Launches and initializes an application environment.
+launch_photoshop_2015$Launch Photoshop 2015$$False$$Launches and initializes an application environment.
